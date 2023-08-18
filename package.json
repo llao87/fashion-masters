@@ -1,0 +1,31 @@
+{
+    "name": "The project",
+    "version": "1.0.0",
+    "description": "The project",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Dmitry \"llao\" Kragel",
+    "license": "ISC",
+    "devDependencies": {
+        "animate.css": "^4.1.1",
+        "browser-sync": "^2.27.7",
+        "del": "^6.0.0",
+        "fslightbox": "^3.4.1",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^6.1.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-pug": "^5.0.0",
+        "gulp-rename": "^2.0.0",
+        "gulp-sass": "^5.1.0",
+        "gulp-uglify": "^3.0.2",
+        "jquery": "^3.6.1",
+        "jquery.animate-number": "^0.0.14",
+        "lightgallery": "^2.7.1",
+        "node-gyp": "^8.4.1",
+        "normalize.css": "^8.0.1",
+        "sass": "^1.47.0",
+        "slick-carousel": "^1.8.1"
+    }
+}
