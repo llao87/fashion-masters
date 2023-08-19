@@ -1,0 +1,42 @@
+.who-can {
+    padding: 4.8em 0 9em 0;
+    .container {
+        .section-title {
+        }
+
+        .persons-list {
+            .columns {
+                display: flex;
+                align-items: stretch;
+                justify-content: space-between;
+                .column {
+                    width: 33%;
+                    .content-block {
+                        color: $text;
+                        margin: 11.7em 0 0 1em;
+                        ul {
+                            li {
+                                a,
+                                span {
+                                    color: $text;
+                                    text-transform: uppercase;
+                                }
+                            }
+                        }
+                    }
+                }
+                .column--image {
+                    width: 66%;
+                    .photo {
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        height: 45em;
+                        width: 79.8em;
+                        margin: 5.4em 0 0 0;
+                    }
+                }
+            }
+        }
+    }
+}
