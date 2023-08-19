@@ -1,0 +1,87 @@
+.opisanie {
+    padding: 10.5em 0;
+
+    .container {
+        .section-title {
+            margin: 0 0 0.55em 0;
+        }
+    }
+
+    .opisanie-texts {
+        .red-header {
+            background-color: $red;
+            color: $white;
+            padding: 1.3em 0;
+
+            .container {
+                .columns {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    .column {
+                        width: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        .icon {
+                            background-position: center;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                        }
+                        .text {
+                            font-size: 3.6em;
+                            font-weight: 600;
+                            text-transform: uppercase;
+                        }
+                    }
+                    .column:first-child {
+                        padding-left: 3em;
+
+                        .icon {
+                            width: 6em;
+                            height: 6em;
+                            margin: 0 1.7em 0 0;
+                            background-image: url(../img/icon-crown.svg);
+                        }
+                    }
+                    .column:last-child {
+                        padding-left: 15.3em;
+                        .icon {
+                            width: 5.5em;
+                            height: 5.5em;
+                            margin: 0 1.9em 0 0;
+                            background-image: url(../img/icon-zhuri.svg);
+                        }
+                    }
+                }
+            }
+        }
+        .text-blocks {
+            padding: 4.8em 0 0 0;
+            .container {
+                .columns {
+                    display: flex;
+                    align-items: stretch;
+                    justify-content: space-between;
+                    .column {
+                        width: 50%;
+                        flex: none;
+                        border-left: 0.3em solid #333;
+                        padding: 0 0 0 2em;
+
+                        .content-block {
+                            max-width: 65%;
+                            margin: 0.4em 0;
+                        }
+                    }
+                    .column:first-child {
+                        margin-left: 8.5em;
+                    }
+                    .column:last-child {
+                        margin-left: 11.8em;
+                    }
+                }
+            }
+        }
+    }
+}

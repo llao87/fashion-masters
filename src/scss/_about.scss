@@ -1,0 +1,63 @@
+.about {
+    padding: 4em 0;
+    .container {
+        .columns {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+
+            .column {
+                width: 50%;
+
+                .description {
+                }
+                .description--about {
+                    display: flex;
+                    align-items: stretch;
+                    justify-content: flex-start;
+                    .icon {
+                        width: 10em;
+                        height: 24em;
+                        background-image: url(../img/icon-letter-o.svg);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        margin: -2.8em 0 0 0.4em;
+                        flex: none;
+                    }
+                    .text {
+                        margin: 0 0 0 0.7em;
+                        .block-title {
+                            margin: 0 0 0.8em 0;
+                        }
+                        .content-block {
+                            max-width: 75%;
+
+                            p {
+                            }
+                        }
+                    }
+                }
+                .description--registration {
+                    width: 45%;
+                    display: inline-block;
+                    margin: 0 6em 0 0;
+                    text-align: left;
+
+                    .content-block {
+                    }
+                }
+
+                .btn {
+                    margin: 1.2em 0;
+                    .text {
+                    }
+                }
+
+                &:last-child {
+                    text-align: right;
+                }
+            }
+        }
+    }
+}

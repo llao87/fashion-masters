@@ -49,22 +49,21 @@ gulp.task("css", async function () {
         .pipe(concat("_libs.scss"))
         .pipe(gulp.dest("src/scss"))
         .pipe(browserSync.reload({ stream: true }));
-    });
-    
-    gulp.task("html", async function () {
-        return gulp.src("src/*.html").pipe(browserSync.reload({ stream: true }));
-    });
-    
-    gulp.task("script", async function () {
-        return gulp.src("src/js/*.js").pipe(browserSync.reload({ stream: true }));
-    });
-    
-    gulp.task("js", async function () {
-        return gulp
+});
+
+gulp.task("html", async function () {
+    return gulp.src("src/*.html").pipe(browserSync.reload({ stream: true }));
+});
+
+gulp.task("script", async function () {
+    return gulp.src("src/js/*.js").pipe(browserSync.reload({ stream: true }));
+});
+
+gulp.task("js", async function () {
+    return gulp
         .src([
             "node_modules/jquery/dist/jquery.js",
             "node_modules/slick-carousel/slick/slick.min.js",
-            "node_modules/ ",
             "node_modules/jquery.animate-number/jquery.animateNumber.min.js",
             "src/js/simplelightbox/dist/simple-lightbox.jquery.min.js",
         ])
