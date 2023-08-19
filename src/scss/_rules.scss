@@ -1,0 +1,43 @@
+.rules {
+    padding: 6.3em 0 4.5em;
+
+    .container {
+        .section-title {
+        }
+
+        .steps {
+            width: 105em;
+            margin: 7.5em 0 0 0;
+            .step {
+                .columns {
+                    display: flex;
+                    align-items: stretch;
+                    justify-content: space-between;
+
+                    .column {
+                        width: 50%;
+                    }
+                    .column--step-name {
+                        .step-name {
+                            font-size: 6.4em;
+                            text-transform: uppercase;
+                            padding: 1.95em 0.35em;
+                        }
+                    }
+                    .column--step-description {
+                        border: 0.1em solid $gray;
+                        padding: 3.4em 3em;
+                        .description {
+                            .block-title {
+                                font-size: 3.18em;
+                                margin: 0 0 0.6em 0;
+                            }
+                            .content-block {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
