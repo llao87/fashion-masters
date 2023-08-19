@@ -1,0 +1,116 @@
+header {
+    padding: 2em 0;
+
+    .container {
+        .top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 0 2.8em 0;
+
+            .logo {
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .logo__img {
+                    width: auto;
+                    height: auto;
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+            .logo--profashion {
+                width: 21.5em;
+                height: 7.2em;
+                flex: none;
+            }
+            .logo--oguz {
+                width: 25.4em;
+                height: 4.3em;
+                flex: none;
+            }
+
+            .main-nav {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                width: 73em;
+                flex: none;
+
+                .main-nav__link {
+                    font-size: 2em;
+                    font-weight: 300;
+                    text-decoration: none;
+                    color: $text;
+                    background-color: $white;
+                    border: 0.1em solid $gray;
+                    border-radius: 10em;
+                    padding: 0.5em 0.5em;
+                    transition: all 0.3s linear;
+
+                    &:hover {
+                        color: $white;
+                        background-color: $red;
+                        border-color: $red;
+                    }
+                }
+            }
+        }
+
+        .bottom {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            .competition-name {
+                .main-row {
+                    font-size: 6.2em;
+                    color: #272727;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+                .sub-row {
+                    font-size: 2.4em;
+                    color: #272727;
+                    font-weight: 400;
+                    text-transform: lowercase;
+                    margin: 0.1em 0 0 0;
+                    letter-spacing: 0.0325em;
+                }
+            }
+
+            .add-menu {
+                display: block;
+                height: auto;
+                margin: 1.3em 0 0 0;
+
+                .add-menu__link {
+                    font-size: 2em;
+                    font-weight: 300;
+                    text-decoration: none;
+                    color: $text;
+                    border: 0.1em solid $gray;
+                    border-radius: 10em;
+                    padding: 0.5em 0.5em;
+                    margin: 0 0.2em;
+                    transition: all 0.3s linear;
+
+                    &:hover {
+                        color: $white;
+                        background-color: $red;
+                        border-color: $red;
+                    }
+
+                    &:last-child {
+                        color: $white;
+                        background-color: $red;
+                        border-color: $red;
+                        padding: 0.5em 0.6em;
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
