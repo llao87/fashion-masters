@@ -1,0 +1,71 @@
+.profit-for-finalists {
+    padding: 4.5em 0 0 0;
+    .red-header {
+        color: $white;
+        background-color: $red;
+        padding: 2.5em 0;
+        .container {
+            .section-title {
+                font-size: 3.6em;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .columns {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+
+        .columns {
+        }
+        .column--photo {
+            width: 38%;
+            flex: none;
+            text-align: right;
+            height: 91.4em;
+            background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
+            .content-block {
+                padding: 1.8em 0 1.8em 30.8em;
+                display: inline-block;
+                text-align: left;
+                background-color: rgba(255, 255, 255, 0.3);
+                p {
+                }
+            }
+        }
+        .column--text {
+            width: 62%;
+            flex: none;
+            padding: 9.5em 0 0 2.2em;
+            .block-title {
+                max-width: 20em;
+                line-height: 1.2;
+                margin-bottom: 1.6em;
+            }
+
+            .gifts {
+                display: flex;
+                align-items: stretch;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                .gift {
+                    width: 37.4%;
+                    margin: 0 0 3.5em 0;
+                    padding: 0px 3em 0 0;
+                    .gift-title {
+                        font-size: 2.44em;
+                        font-weight: 500;
+                        margin: 0 0 0.4em 0;
+                    }
+                    .content-block {
+                        p {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
