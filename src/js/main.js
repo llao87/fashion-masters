@@ -31,15 +31,15 @@
         }
     }
 
-    let startZhuriSelector = function () {
-        let zhuri = jQuery(".zhuri .member");
+    let startjurySelector = function () {
+        let jury = jQuery(".jury .member");
 
-        if (zhuri.length) {
-            zhuri.on("click", function () {
-                let index = zhuri.index(this);
+        if (jury.length) {
+            jury.on("click", function () {
+                let index = jury.index(this);
                 console.log(index);
 
-                zhuri.removeClass("active");
+                jury.removeClass("active");
                 jQuery(this).addClass("active");
 
                 if (index < 2) {
@@ -52,5 +52,5 @@
             });
         }
     };
-    startZhuriSelector();
+    startjurySelector();
 })();

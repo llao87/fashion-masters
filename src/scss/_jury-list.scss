@@ -1,0 +1,65 @@
+.jury-list {
+    padding: 4.5em 0 5em 0;
+    .bg-layer {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 53.7em;
+        background-color: $red;
+        top: 0;
+        z-index: -1;
+    }
+    .container {
+        .content-block {
+            color: $white;
+            max-width: 55em;
+            margin: 0 0;
+            p {
+            }
+        }
+
+        .controls {
+            margin: 4.8em 0 2.4em 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .jury-type {
+                color: $white;
+                font-size: 3.6em;
+                font-weight: 600;
+            }
+
+            .js-jury-types {
+                option {
+                }
+            }
+        }
+
+        .jury-members {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .member {
+                width: 32.5%;
+                height: 60em;
+                margin: 0 0 2.2em 0;
+                .photo {
+                    height: 45.5em;
+                }
+                .info {
+                    padding: 1.5em 0em 0 0;
+                    line-height: 1;
+                    .name {
+                        font-size: 2.4em;
+                        font-weight: 600;
+                        margin: 0 0 0.4em 0;
+                    }
+                    .content-block {
+                        color: $text;
+                    }
+                }
+            }
+        }
+    }
+}

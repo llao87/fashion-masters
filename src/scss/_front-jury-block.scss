@@ -1,10 +1,10 @@
-.front-zhuri-block {
+.front-jury-block {
     padding: 5.2em 0;
     .container {
         .section-title {
         }
 
-        .zhuri {
+        .jury {
             display: flex;
             align-items: stretch;
             justify-content: space-between;
@@ -77,7 +77,7 @@
                     content: "";
                     width: 30.2em;
                     height: 0.4em;
-                    background-image: url(/img/icon-arrow-show-zhuri.svg);
+                    background-image: url(/img/icon-arrow-show-jury.svg);
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size: cover;
@@ -90,7 +90,7 @@
             .show-all:hover {
                 color: $red;
                 &::after {
-                    background-image: url(/img/icon-arrow-show-zhuri-hover.svg);
+                    background-image: url(/img/icon-arrow-show-jury-hover.svg);
                 }
             }
         }

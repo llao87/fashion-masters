@@ -79,7 +79,7 @@
                     content: "";
                     width: 14.7em;
                     height: 0.6em;
-                    background-image: url(/img/icon-arrow-show-zhuri.svg);
+                    background-image: url(/img/icon-arrow-show-jury.svg);
                     background-repeat: no-repeat;
                     background-position: center right;
                     background-size: cover;
@@ -92,7 +92,7 @@
             .show-all:hover {
                 color: $red;
                 &::after {
-                    background-image: url(/img/icon-arrow-show-zhuri-hover.svg);
+                    background-image: url(/img/icon-arrow-show-jury-hover.svg);
                 }
             }
         }
