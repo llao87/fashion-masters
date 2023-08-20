@@ -1,0 +1,98 @@
+footer {
+    background-color: $footer;
+    padding: 4.2em 0 3.5em;
+    .container {
+        .top-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 0 6.2em 0;
+            .socials {
+                .messengers {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    margin: 2em 0;
+                    .messenger {
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        text-decoration: none;
+                        color: $text;
+                        width: 4em;
+                        height: 4em;
+                        margin: 0 2em 0 0;
+                        transition: all 0.3s linear;
+                    }
+                    .messenger--inst {
+                        background-image: url(../img/icon-social-inst.svg);
+
+                        &:hover {
+                            background-image: url(../img/icon-social-inst-hover.svg);
+                        }
+                    }
+                    .messenger--tlgm {
+                        background-image: url(../img/icon-social-tlgm.svg);
+
+                        &:hover {
+                            background-image: url(../img/icon-social-tlgm-hover.svg);
+                        }
+                    }
+                    .messenger--wapp {
+                        background-image: url(../img/icon-social-wapp.svg);
+
+                        &:hover {
+                            background-image: url(../img/icon-social-wapp-hover.svg);
+                        }
+                    }
+                    .messenger--vknt {
+                        background-image: url(../img/icon-social-vknt.svg);
+
+                        &:hover {
+                            background-image: url(../img/icon-social-vknt-hover.svg);
+                        }
+                    }
+                }
+                .email {
+                    .email-address {
+                        color: $white;
+                        font-size: 2.4em;
+                        font-weight: 600;
+                        transition: all 0.3s linear;
+
+                        &:hover {
+                            color: $red;
+                        }
+                    }
+                }
+            }
+            .logo {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 27em;
+                height: 10em;
+                .logo-img {
+                    max-width: 100%;
+                    max-height: 100%;
+                    width: auto;
+                    height: auto;
+                }
+            }
+        }
+
+        .bottom-row {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            .address {
+                color: $white;
+                max-width: 18em;
+                width: 100%;
+            }
+            .copyrights {
+                color: $white;
+            }
+        }
+    }
+}

@@ -43,7 +43,7 @@ body {
     justify-content: center;
     text-decoration: none;
     padding: 2em 7.2em;
-    border: 0.3em solid $red;
+    border: 0.3em solid transparent;
     border-radius: 2.2em;
     transition: all 0.3s linear;
     cursor: pointer;
@@ -63,7 +63,19 @@ body {
         border-color: $redHover;
     }
 }
-
+.input-text {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: lowercase;
+    padding: 1em 2.2em;
+    border: 0.075em solid #d9d9d9;
+    border-radius: 1em;
+    transition: all .3s linear;
+    cursor: pointer;
+}
 .content-block {
     color: $text;
     font-weight: 400;
