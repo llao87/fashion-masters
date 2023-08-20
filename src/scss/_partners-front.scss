@@ -1,0 +1,26 @@
+.partners-front {
+    padding: 5em 0 9em 0;
+    .container {
+        .section-title {
+        }
+
+        .partners {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 5.6em 0 0 0;
+
+            .partner {
+                width: 24%;
+                height: 18.5em;
+                margin-bottom: 2em;
+                border: 0.2em solid $gray;
+
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+        }
+    }
+}
