@@ -1,0 +1,79 @@
+.projects-list {
+    padding: 4em 0 9.8em;
+
+    .container {
+        .projects {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .project {
+                width: 32%;
+                flex: none;
+                margin: 0 0 2.7em 0;
+                border-top: 0.2em solid $gray;
+
+                .images {
+                    .proj-photo {
+                        height: auto;
+                        width: auto;
+                        max-width: 100%;
+                        max-height: 100%;
+                    }
+                }
+                .info {
+                    padding: 0.7em 0;
+                    .name {
+                        font-size: 2.4em;
+                        font-weight: 600;
+                    }
+                    .content-block {
+                        margin: 0.8em 0;
+                        p {
+                        }
+                    }
+                }
+            }
+        }
+        .controls {
+            text-align: center;
+            margin: 2.8em 0 0 0;
+            .show-more {
+                display: inline-block;
+                font-size: 2.1em;
+                text-transform: uppercase;
+                font-weight: 600;
+                padding: 0 2em 0.2em 0;
+                border-bottom: 0.1em solid $text;
+                cursor: pointer;
+                transition: all 0.3s linear;
+
+                &::after {
+                    display: block;
+                    position: absolute;
+                    content: "";
+                    width: 1em;
+                    height: 0.5em;
+                    background-image: url(../img/icon-arrow-show-more.svg);
+                    background-size: contain;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    top: 40%;
+                    right: 0.1em;
+                    transform: translateY(-50%);
+                    transition: all 0.3s linear;
+                }
+
+                &:hover {
+                    color: $red;
+                    border-color: $red;
+
+                    &::after {
+                        background-image: url(../img/icon-arrow-show-more-hover.svg);
+                    }
+                }
+            }
+        }
+    }
+}

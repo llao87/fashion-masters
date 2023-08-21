@@ -1,0 +1,46 @@
+.hvr__images {
+    position: relative;
+    height: 46em;
+    overflow-y: hidden;
+}
+
+.hvr__sectors {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+}
+
+.hvr__sector {
+    flex-grow: 1;
+}
+
+.images {
+    display: flex;
+    overflow: hidden;
+}
+
+.image {
+    display: block;
+}
+
+.hvr__dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7em 0;
+}
+
+.hvr__dot {
+    width: 0.7em;
+    height: 0.7em;
+    margin: 0 0.3em;
+    border-radius: 50%;
+    background: $gray;
+}
+
+.hvr__dot--active {
+    background: $red;
+}
