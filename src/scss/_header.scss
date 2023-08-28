@@ -55,6 +55,13 @@ header {
                         border-color: $red;
                     }
                 }
+                .active {
+                    color: $white;
+                    background-color: $red;
+                    border-color: $red;
+                    padding: 0.5em 0.6em;
+                    margin-right: 0;
+                }
             }
         }
 
@@ -102,14 +109,13 @@ header {
                         background-color: $red;
                         border-color: $red;
                     }
-
-                    &:last-child {
-                        color: $white;
-                        background-color: $red;
-                        border-color: $red;
-                        padding: 0.5em 0.6em;
-                        margin-right: 0;
-                    }
+                }
+                .active {
+                    color: $white;
+                    background-color: $red;
+                    border-color: $red;
+                    padding: 0.5em 0.6em;
+                    margin-right: 0;
                 }
             }
         }

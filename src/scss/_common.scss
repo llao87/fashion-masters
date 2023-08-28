@@ -73,7 +73,7 @@ body {
     padding: 1em 2.2em;
     border: 0.075em solid #d9d9d9;
     border-radius: 1em;
-    transition: all .3s linear;
+    transition: all 0.3s linear;
     cursor: pointer;
 }
 .content-block {
@@ -85,7 +85,8 @@ body {
     span,
     a,
     ul,
-    ol {
+    ol,
+    blockquote {
         line-height: 1.35;
     }
 
@@ -128,5 +129,60 @@ body {
                 background-position: center;
             }
         }
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        margin: 4em 0 3em 0;
+        display: block;
+    }
+
+    blockquote {
+        display: block;
+        font-size: 2.4em;
+        font-style: italic;
+        font-weight: 500;
+        padding: 0 0 0 4.5em;
+        margin: 1.6em 0 1.6em 0;
+        line-height: 1.25;
+
+        &::before {
+            position: absolute;
+            display: block;
+            content: "";
+            background-image: url(/img/icon-quotes.svg);
+            background-size: contain;
+            background-position: center top;
+            background-repeat: no-repeat;
+            width: 1.6em;
+            height: 2em;
+            top: 0;
+            left: 0.5em;
+        }
+    }
+
+    :first-child {
+        margin-top: 0;
+    }
+    :last-child {
+        margin-bottom: 0;
+    }
+}
+.columns {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+
+    @media screen and (max-width: 768px) {
+        flex-wrap: wrap;
+    }
+
+    .column {
+        width: 49%;
+        flex: none;
+    }
+    .column--third {
+        width: 33.3333%;
     }
 }

@@ -1,0 +1,21 @@
+.news-top {
+    padding: 1.8em 0 3em 0;
+    .columns {
+        width: 100%;
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .column {
+            width: 50%;
+            .news-item {
+                display: block;
+                width: 100%;
+                height: 54em;
+            }
+        }
+        .column--third {
+            width: 33.3333%;
+        }
+    }
+}
