@@ -63,6 +63,18 @@ body {
         border-color: $redHover;
     }
 }
+.btn--transparent {
+    background-color: transparent;
+    color: $text;
+    border-color: $text;
+    border-width: 0.1em;
+
+    &:hover {
+        background-color: $redHover;
+        border-color: $redHover;
+        color: $white;
+    }
+}
 .input-text {
     display: inline-flex;
     align-items: center;
