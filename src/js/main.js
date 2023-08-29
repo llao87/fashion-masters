@@ -53,4 +53,34 @@
         }
     };
     startjurySelector();
+
+    /**
+     * Галерея в карточке проекта
+     */
+    let projectGallery = function () {
+        let gallery = jQuery(".js--project-gallery"),
+            galleryNav = jQuery(".js--project-gallery-navigation");
+
+        gallery.find(".slides").slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            centerMode: true,
+            arrows: false,
+            fade: true,
+            asNavFor: galleryNav.find(".slides"),
+        });
+        galleryNav.find(".slides").slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            vertical: true,
+            asNavFor: gallery.find(".slides"),
+            arrows: false,
+            dots: false,
+            infinite: true,
+            centerMode: true,
+            focusOnSelect: true,
+        });
+    };
+    projectGallery();
 })();

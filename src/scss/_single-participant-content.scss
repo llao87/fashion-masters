@@ -1,0 +1,155 @@
+.participant-content {
+    padding: 4.2em 0 12em 0;
+    .container {
+        .participant-info {
+            width: 74em;
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            margin: 0 0 5.4em 0;
+            .photo {
+                img {
+                    border-style: none;
+                    width: 20em;
+                    height: 20em;
+                    flex: none;
+                    display: inline-block;
+                }
+                figcaption {
+                    .content-block {
+                        margin: 0.6em 0 0 0.3em;
+                    }
+                }
+            }
+            .description {
+                padding: 0.4em 0 0 2em;
+                .block-title {
+                    font-size: 2.2em;
+                    margin: 0 0 0.55em 0;
+                    line-height: 1.25;
+                    .from {
+                        font-weight: 300;
+                    }
+                }
+                .content-block {
+                }
+            }
+        }
+        .columns {
+            .column {
+                &:first-child {
+                    display: flex;
+                    align-items: stretch;
+                    justify-content: flex-start;
+                    flex: none;
+                    width: 85em;
+                }
+                &:last-child {
+                    flex: 1;
+                }
+                .project-gallery {
+                    flex: none;
+                    width: 62em;
+                    height: 46em;
+                    margin: 0 2em 0 0;
+                    .slides {
+                        height: inherit;
+                        .slick-list {
+                            height: inherit;
+                            .slick-track {
+                                height: inherit;
+                                .slide {
+                                    height: inherit;
+                                    border: 0.1em solid $gray;
+                                    padding: 1em;
+
+                                    .inner {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        width: 100%;
+                                        height: 100%;
+
+                                        .photo {
+                                            background-size: contain;
+                                            background-repeat: no-repeat;
+                                            background-position: center;
+                                            width: 100%;
+                                            height: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .project-gallery-navigation {
+                    flex: 1;
+                    width: 100%;
+                    height: 46em;
+                    .slides {
+                        .slick-list {
+                            .slick-track {
+                                .slide {
+                                    height: 12em;
+                                    padding: 0.5em;
+                                    cursor: pointer;
+                                    .inner {
+                                        border: 0.1em solid $gray;
+                                        padding: 0.5em;
+                                        width: 100%;
+                                        height: 100%;
+                                        .photo {
+                                            background-size: contain;
+                                            background-repeat: no-repeat;
+                                            background-position: center;
+                                            width: 100%;
+                                            height: 100%;
+                                        }
+                                    }
+                                }
+                                .slick-current {
+                                    .inner {
+                                        border-color: $red;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .slick-dots {
+                        position: absolute;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        list-style: none;
+                        // background-color: red;
+                        li {
+                            width: 3px;
+                            height: 30px;
+                            // background-color: aqua;
+                            button {
+                                display: none;
+                            }
+                        }
+                        .slick-active {
+                            // background-color: purple;
+                        }
+                    }
+                }
+
+                .project-preview {
+                    padding: 0 0 0 2.2em;
+
+                    .content-block {
+                    }
+
+                    .block-title {
+                        font-size: 2.4em;
+                        margin: 0.5em 0 1em;
+                    }
+                }
+            }
+        }
+    }
+}
